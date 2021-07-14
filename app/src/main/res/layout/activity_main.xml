@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFICADOR AÑO BISIESTO"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2942CC"
+        android:layout_marginTop="25sp" />
+    <EditText
+        android:id="@+id/txtYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:hint="Ingrese un año a verificar"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_centerHorizontal="true"
+        android:text="Verifica"
+        android:onClick="verifica"
+        android:layout_below="@id/txtYear"/>
+
+</RelativeLayout>
